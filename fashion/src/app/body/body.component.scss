@@ -1,0 +1,36 @@
+.body {
+    margin-top: 50px;
+    .body-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .list-choosen {
+            width: 20%;
+            background: red;
+            display: flex;
+            flex-direction: column;
+            button {
+                margin-bottom: 2px;
+            }
+        }
+        .list-item {
+            width: 80%;
+            border: 1px solid #000;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .body-inner {
+            flex-direction: column;
+        }
+        .body-inner .list-choosen {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .body-inner .list-item {
+            width: 100%;
+        }
+    }
+}
