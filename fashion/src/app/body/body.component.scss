@@ -8,16 +8,61 @@
         justify-content: space-between;
         .list-choosen {
             width: 20%;
-            background: red;
+            background: beige;
             display: flex;
             flex-direction: column;
             button {
+                background: #cc885a;
                 margin-bottom: 2px;
+                &:hover {
+                    background: #f0ad4e;
+                }
             }
         }
         .list-item {
             width: 80%;
-            border: 1px solid #000;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .item {
+                margin-bottom: 2vw;
+                width: 30%;
+                border: 1px solid #eedfdf;
+                img {
+                    width: 100%;
+                }
+                .thumbail-title {
+                    padding: 5%;
+                    line-height: 1.5;
+                    .price {
+                        .price-title {
+                            font-weight: bold;
+                        }
+                        .price-sale {
+                            color: #f00;
+                            margin-right: 5px;
+                        }
+                        .price-sale:first-letter {
+                            text-decoration: underline;
+                        }
+                        .price-origin {
+                            text-decoration: line-through;
+                        }
+                    }
+                    .add-cart {
+                        font-weight: bold;
+                        color: #cc885a;
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: #f00;
+                        }
+                    }
+                }
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
     @media screen and (max-width:768px) {
@@ -31,6 +76,18 @@
         }
         .body-inner .list-item {
             width: 100%;
+        }
+        .list-item {
+            margin: 3vw auto 0;
+            max-width: 90vw;
+            .item {
+                width: 100%!important;
+            }
+        }
+    }
+    @media screen and (min-width:769px) {
+        .list-item {
+            margin-left: 3vw;
         }
     }
 }

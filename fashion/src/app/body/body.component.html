@@ -1,16 +1,20 @@
 <section class="body">
     <div class="body-inner">
         <div class="list-choosen">
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-warning" *ngFor="let item of menu">{{item}}</button>
         </div>
-        <div class="list-item">asas</div>
+        <div class="list-item">
+            <div class="item" *ngFor="let item of listItem">
+                <img src="../assets/images/{{item.image}}">
+                <div class="thumbail-title">
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="price">
+                        <span class="price-sale">đ {{item.priceSale}}</span>
+                        <span class="price-origin">đ {{item.priceOrigin}}</span>
+                    </div>
+                    <span class="add-cart">Add to cart</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
