@@ -8,62 +8,63 @@ import { Component, OnInit } from '@angular/core';
 export class BodyComponent implements OnInit {
   listItem = [];
   menu = [];
-  constructor() { 
+  constructor() {
+  
     this.menu = [
       "Shoes",
       "T-Shirt",
       "Dress",
       "vallet",
       "Hat",
-       "Shoes",
+      "Shoes",
       "T-Shirt",
       "Dress",
       "vallet",
       "Hat",
-       "Shoes",
+      "Shoes",
       "T-Shirt",
       "Dress",
       "vallet",
       "Hat",
     ]
     this.listItem = [
-       {
-        image:"item.jpg",
+      {
+        image: "item.jpg",
         name: "T Shirt",
-        priceSale:"20,000",
-        priceOrigin:"30,000"
+        priceSale: "20,000",
+        priceOrigin: "30,000"
       },
       {
-        image:"item3.jpeg",
+        image: "item3.jpeg",
         name: "T Shirt",
-        priceSale:"20,000",
-        priceOrigin:"30,000"
+        priceSale: "20,000",
+        priceOrigin: "30,000"
       },
-       {
-        image:"item3.jpeg",
+      {
+        image: "item3.jpeg",
         name: "T Shirt",
-        priceSale:"20,000",
-        priceOrigin:"30,000"
+        priceSale: "20,000",
+        priceOrigin: "30,000"
       },
-       {
-        image:"item3.jpeg",
+      {
+        image: "item3.jpeg",
         name: "T Shirt",
-        priceSale:"20,000",
-        priceOrigin:"30,000"
+        priceSale: "20,000",
+        priceOrigin: "30,000"
       },
-       {
-        image:"item5.jpg",
+      {
+        image: "item5.jpg",
         name: "T Shirt",
-        priceSale:"20,000",
-        priceOrigin:"30,000"
+        priceSale: "20,000",
+        priceOrigin: "30,000"
       },
-       {
-        image:"item3.jpeg",
+      {
+        image: "item3.jpeg",
         name: "T Shirt",
-        priceSale:"20,000",
-        priceOrigin:"30,000"
+        priceSale: "20,000",
+        priceOrigin: "30,000"
       }
-      
+
     ]
   }
 

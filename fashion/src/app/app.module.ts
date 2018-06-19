@@ -9,6 +9,7 @@ import { FooterComponent } from './share/component/footer/footer.component';
 import { SearchComponent } from './share/component/search/search.component';
 import { BannerComponent } from './share/component/banner/banner.component';
 import { BodyComponent } from './body/body.component';
+import { WhyUseComponent } from './why-use/why-use.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BodyComponent } from './body/body.component';
     FooterComponent,
     SearchComponent,
     BannerComponent,
-    BodyComponent
+    BodyComponent,
+    WhyUseComponent
   ],
   imports: [
     Routing,
